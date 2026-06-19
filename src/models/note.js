@@ -32,5 +32,5 @@ const noteSchema = new Schema(
     versionKey: false,
   },
 );
-noteSchema.index({ userId: 1, title: 1 });
+noteSchema.index({ tag: 1, userId: 1 });
 export const Note = model('Note', noteSchema);
